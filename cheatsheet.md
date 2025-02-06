@@ -1,27 +1,27 @@
-# General remote ennumeration 
+# General remote enumeration 
 - Enumerate network service versions (nmap -sV)
 - DO NOT forget scanning high port ranges (nmap -p 1-65535)
 - DO NOT forget UDP scans (nmap -sU )
 - Try syn stealh scans if no interesting results (nmap -sS)
 - DO NOT forget to banner grab weird unidentified services with netcat 
-- SMB ennumeration
-- Ennumerate OS , version and arch
-- Ennumerate SMB shares
+- SMB enumeration
+- Enumerate OS , version and arch
+- Enumerate SMB shares
 - Try 'guest' , 'guest' credentials 
 - Take note of writable and readable SMB shares
 - Read from readable shares 
 - Look into any Downloads folder 
 - Look into any Programs folder 
-- Try to ennumerate any applications running 
+- Try to enumerate any applications running 
 
-# Web Application ennumeration
+# Web Application enumeration
 - Identify if virtual host needs hostname to work ( add to /etc/hosts)
 - Identify backend stack
 - Identify CMS 
 - Bruteforce common directories and files
 - DO NOT forget to try a bigger list (check /usr/share/wordlists/dirbuster)
 - Try to trigger an error with a faulty http request
-- DO NOT forget to ennumerate HTTP methods 
+- DO NOT forget to enumerate HTTP methods 
 - Look at the frontend source code - find links and clues of tech stack
 - Run a nikto scan 
 - DO NOT forget to take notes of emails/usernames found 
@@ -55,12 +55,12 @@
 - Use /tmp in Linux or C:\Users\Public in Windows as writable and executable paths 
 
 # Linux - You are in 
-- Ennumerate OS and kernel version 
-- Ennumerate users in /etc/passwd
+- Enumerate OS and kernel version 
+- Enumerate users in /etc/passwd
 - Find writable directories 
-- Ennumerate kernel modules
-- Ennumerate crontabs 
-- Ennumerate suid binaries 
+- Enumerate kernel modules
+- Enumerate crontabs 
+- Enumerate suid binaries 
 - Run linpeas and unix-privesc-check 
 - Use gtfo bins to look up any privsec opportunities 
 - DO NOT forget to check env variables 
@@ -88,25 +88,25 @@
 
 
 # Windows - You are in
-- Ennumerate OS version
-- Ennumerate interesting files (.txt,*.pdf,*.xls,*.xlsx,*.doc,*.docx,.kdbx) 
+- Enumerate OS version
+- Enumerate interesting files (.txt,*.pdf,*.xls,*.xlsx,*.doc,*.docx,.kdbx) 
 - DO NOT forget to look around for kepass files 
-- Ennumerate programs and versions installed 
+- Enumerate programs and versions installed 
 - Download PowerView 
 - Download PowerUp
 - Download WinPeas
-- Ennumerate user privileges 
+- Enumerate user privileges 
 - Check if user can restart the machine 
 - Does it have SeImpersonatePrivilege ?
 - Is the user in the Backup Operators group ?
-- Ennumerate users in admin groups 
+- Enumerate users in admin groups 
 - Check if user is admin anywhere on other machines
 - You can use crackmapexec for the above
 - Check for smb shares available for the user 
 - Find modifiable service files 
 - Check powershell history
-- Ennumerate scheduled tasks
-- Ennumerate paths of current services
+- Enumerate scheduled tasks
+- Enumerate paths of current services
 - Check for unquoted service paths
 - Dump all event logs 
 - DO NOT forget dll hjacking clues 
