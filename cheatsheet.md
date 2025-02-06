@@ -49,8 +49,8 @@
 - Take note of release dates for services and OS to understand if exploits will work 
 - Generate shells with msfvenom 
 - DO NOT forget to use port 80 or 443 for reverse shells ( bypass any firewalls )
-- DO NOT forget OS architecture 
-- Use /tmp in Linux or C:\Users\Public in Windows as writable paths 
+- DO NOT forget OS architecture for exploits and shells 
+- Use /tmp in Linux or C:\Users\Public in Windows as writable and executable paths 
 
 # Linux - You are in 
 - Ennumerate OS and kernel version 
