@@ -1,5 +1,4 @@
 # General remote ennumeration 
-- Port scanning 
 - Enumerate network service versions (nmap -sV)
 - DO NOT forget scanning high port ranges (nmap -p 1-65535)
 - DO NOT forget UDP scans (nmap -sU )
