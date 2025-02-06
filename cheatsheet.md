@@ -41,6 +41,8 @@
 - DO NOT forget to check if you can replace ssh keys with a path traversal file upload 
 - DO NOT forget to check if you can read private ssh keys via path traversal 
 - DO NOT forget to check for file upload vulnerabilities - if mime type, file extension or content are being filtered
+- Enumerate cmd execution and file read privileges for SQLis 
+
 
 
 # Network Services - Getting in 
@@ -113,9 +115,10 @@
 - Dump NTLM hashes 
 - Dump Domain hashes 
 - Dump tickets for pass the ticket 
-- DO NOT forget to crack everything  
+- DO NOT forget to crack everything
+- DO NOT forget to collect all credentials 
 - Pass any hashes 
 - Spray any credential combos to the network 
 - Check if admin is admin anywhere else  
-- Check for SMB shares available
+- Check for new SMB shares available
 - Bye bye
